@@ -16,7 +16,7 @@ describe("ReleaseChecklist", () => {
   test("shows every release step and an empty initial progress", () => {
     render(<ReleaseChecklist />);
 
-    expect(screen.getByRole("heading", { level: 2, name: "0 of 7 steps" })).toBeDefined();
+    expect(screen.getByRole("heading", { level: 2, name: "0 of 6 steps" })).toBeDefined();
     expect(screen.getByRole("heading", { level: 3, name: "Complete code review" })).toBeDefined();
     expect(screen.getAllByRole("button", { name: /Mark .* as completed/ })).toHaveLength(6);
   });
