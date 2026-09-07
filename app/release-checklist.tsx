@@ -37,6 +37,11 @@ const releaseSteps = [
     title: "Confirm the rollback plan",
     description: "There is a clear way to return to a stable version if something goes wrong.",
   },
+  {
+    id: "monitoring",
+    title: "Verify production monitoring",
+    description: "Dashboards and alerts are ready to show whether the new version is healthy.",
+  },
 ] as const;
 
 type StepId = (typeof releaseSteps)[number]["id"];
